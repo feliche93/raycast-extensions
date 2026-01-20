@@ -1,0 +1,239 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "coolify-ops",
+  "title": "Coolify Ops",
+  "description": "Operational control for Coolify: deployments, resources, servers, envs",
+  "icon": "coolify-logo.png",
+  "author": "feliche93",
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search-applications",
+      "title": "Search Applications",
+      "subtitle": "Coolify",
+      "description": "List and search Coolify applications",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "applications",
+        "apps"
+      ]
+    },
+    {
+      "name": "search-deployments",
+      "title": "Search Deployments",
+      "subtitle": "Coolify",
+      "description": "List active Coolify deployments",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "deployments",
+        "deploy"
+      ]
+    },
+    {
+      "name": "search-resources",
+      "title": "Search Resources",
+      "subtitle": "Coolify",
+      "description": "Search applications, services, and databases",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "resources",
+        "applications",
+        "services",
+        "databases"
+      ]
+    },
+    {
+      "name": "search-projects",
+      "title": "Search Projects",
+      "subtitle": "Coolify",
+      "description": "List Coolify projects and environments",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "projects",
+        "environments"
+      ]
+    },
+    {
+      "name": "search-environments",
+      "title": "Search Environments",
+      "subtitle": "Coolify",
+      "description": "List Coolify environments",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "environments",
+        "env"
+      ]
+    },
+    {
+      "name": "search-services",
+      "title": "Search Services",
+      "subtitle": "Coolify",
+      "description": "List Coolify services",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "services"
+      ]
+    },
+    {
+      "name": "search-databases",
+      "title": "Search Databases",
+      "subtitle": "Coolify",
+      "description": "List Coolify databases",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "databases",
+        "db"
+      ]
+    },
+    {
+      "name": "search-servers",
+      "title": "Search Servers",
+      "subtitle": "Coolify",
+      "description": "List Coolify servers",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "servers",
+        "infrastructure"
+      ]
+    },
+    {
+      "name": "search-teams",
+      "title": "Search Teams",
+      "subtitle": "Coolify",
+      "description": "List Coolify teams and members",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "teams",
+        "members"
+      ]
+    },
+    {
+      "name": "search-private-keys",
+      "title": "Search Private Keys",
+      "subtitle": "Coolify",
+      "description": "List Coolify private keys",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "keys",
+        "ssh"
+      ]
+    },
+    {
+      "name": "coolify-status",
+      "title": "Coolify Status",
+      "subtitle": "Coolify",
+      "description": "View Coolify health and version",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "status",
+        "health",
+        "version"
+      ]
+    },
+    {
+      "name": "create-application",
+      "title": "Create Application",
+      "subtitle": "Coolify",
+      "description": "Create a new Coolify application (advanced)",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "application",
+        "create"
+      ]
+    },
+    {
+      "name": "create-database",
+      "title": "Create Database",
+      "subtitle": "Coolify",
+      "description": "Create a new Coolify database (advanced)",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "database",
+        "create"
+      ]
+    },
+    {
+      "name": "resources-api",
+      "title": "Resources (API)",
+      "subtitle": "Coolify",
+      "description": "View raw resources response",
+      "icon": "coolify-logo.png",
+      "mode": "view",
+      "keywords": [
+        "coolify",
+        "resources",
+        "api"
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiUrl",
+      "title": "Coolify API Base URL",
+      "description": "Defaults to Coolify Cloud. Use https://<your-instance>/api/v1 for self-hosted.",
+      "type": "textfield",
+      "required": false,
+      "default": "https://app.coolify.io/api/v1"
+    },
+    {
+      "name": "apiToken",
+      "title": "Coolify API Token",
+      "description": "Create in Coolify under Keys & Tokens → API tokens.",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.1",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
